@@ -1,11 +1,12 @@
 name: Mi primer pipeline
+run-name: se esta corriendo
 on:
   push:
     branches:
       - main
 
 jobs:
-  demo:
+  job1:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -14,10 +15,11 @@ jobs:
       - name: List fili
         run: ls -la
 
-      - name: Print message
-        run: echo "Hello, world!"
+      - name: Print message job1 
+        run: echo "Hello, world!" 
 
   job2:
+    needs: job1
     runs-on: ubuntu-latest
     steps:
           - name: Print message job2 
