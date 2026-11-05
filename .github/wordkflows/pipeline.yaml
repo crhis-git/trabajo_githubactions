@@ -1,3 +1,4 @@
+name: Mi primer pipeline
 on:
   push:
     branches:
@@ -21,4 +22,3 @@ jobs:
     steps:
           - name: Print message job2 
             run: echo "Hello, world!" job2
-
