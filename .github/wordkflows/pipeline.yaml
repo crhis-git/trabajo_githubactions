@@ -10,11 +10,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
+      - name: List fili
+        run: ls -la
+
       - name: Print message
         run: echo "Hello, world!"
 
   job2:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v5
+          - name: Print message job2 
+            run: echo "Hello, world!" job2
+
