@@ -22,7 +22,7 @@ jobs:
         run: ls -la
 
       - name: Print message job1 
-        run: echo "Hello, world ${{vars.name}}"
+        run: echo "Hello, world ${{vars.NOMBRE}}"
 
   job2:
     needs: job1
