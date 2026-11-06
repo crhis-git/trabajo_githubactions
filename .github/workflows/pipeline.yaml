@@ -1,12 +1,15 @@
 name: Mi primer pipeline
 run-name: se esta corriendo
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
   pull_request:
     branches:
       - main
+    paths:
+      -"*.md"
 
 jobs:
   job1:
